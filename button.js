@@ -78,7 +78,6 @@ $( document ).ready(function() {
         });
     });
     
-    
     function Executa(form, button){
     CalcDif(form);
     return;
