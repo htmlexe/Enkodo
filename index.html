@@ -10,6 +10,8 @@
     <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
     <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
 </head>
+
+    
 <body>
   <div class="fixed-nav-bar">
     <div class="logo"><span>Enkodo</span></div>
@@ -38,7 +40,23 @@
     </div>
   </div>
 
+    <script>
+    function getData() {
+        const inputData = document.getElementById('textInput').value;
+        document.getElementById('dataContainer').innerText = "Dữ liệu đã nhập: " + inputData;
+    }
+  </script>
+    
   <div class="login-box">
+      
+     <h1>User Box</h1>
+    <div class="user-box">
+        <input type="text" id="textInput" required>
+        <label>Enter the data</label>
+    </div>
+    <button onclick="getData()">Lấy dữ liệu</button>
+    <div id="dataContainer"></div>
+      
     <h2>Magic</h2>
     <form action="process_data.php" method="post">
       <div class="user-box">
